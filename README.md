@@ -28,7 +28,10 @@ pipeline:
 
 ## Building
 
+- for **prod**: with github actions
+- for **dev**:
+
 ```sh
 # login your dockerhub account.
-$ ./build-and-deploy.sh
+$ ./build-local.sh
 ```
