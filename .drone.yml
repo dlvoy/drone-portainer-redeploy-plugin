@@ -1,7 +1,8 @@
+---
 pipeline:
-  webhook:
-    image: foo/webhook
-    url: http://foo.com
-    method: post
-    body: |
-      hello world
+  redeploy:
+    image: dlvoy/drone-portainer-redeploy-plugin
+    url: https://example.com
+    stack: stack-name
+    api_key: ptr_PORTAINER_ACCESS_TOKEN=
+    debug: false

@@ -1,5 +1,5 @@
 FROM alpine
-ADD post.sh /bin/
-RUN chmod +x /bin/post.sh
-RUN apk -Uuv add curl ca-certificates
-ENTRYPOINT /bin/post.sh
+ADD redeploy.sh /bin/
+RUN chmod +x /bin/redeploy.sh
+RUN apk -Uuv add curl jq bash ca-certificates
+ENTRYPOINT /bin/redeploy.sh
